@@ -1,0 +1,98 @@
+{
+  "sampleQuizAnswers": [
+    {
+      "questionId": "0a",
+      "value": "50-65"
+    },
+    {
+      "questionId": "0b",
+      "value": "4-6"
+    },
+    {
+      "questionId": "0c",
+      "value": "6-months"
+    },
+    {
+      "questionId": "1",
+      "value": "nonfiction"
+    },
+    {
+      "questionId": "2",
+      "value": "sharing"
+    },
+    {
+      "questionId": "3",
+      "value": "collaborative"
+    },
+    {
+      "questionId": "4",
+      "value": "medium"
+    },
+    {
+      "questionId": "5",
+      "value": "hands-off"
+    },
+    {
+      "questionId": "5b",
+      "value": "learning"
+    },
+    {
+      "questionId": "6",
+      "value": "moderate"
+    },
+    {
+      "questionId": "7",
+      "value": "national"
+    },
+    {
+      "questionId": "8",
+      "value": "editing"
+    },
+    {
+      "questionId": "9",
+      "value": "60k-90k"
+    },
+    {
+      "questionId": "10",
+      "value": "basic"
+    },
+    {
+      "questionId": "11",
+      "value": "2-4"
+    },
+    {
+      "questionId": "12",
+      "value": "Atomic Habits by James Clear, The 7 Habits of Highly Effective People by Stephen Covey, Mindset by Carol Dweck"
+    }
+  ],
+  "sampleUserData": {
+    "firstName": "Jane",
+    "lastName": "Smith",
+    "email": "jane.smith@example.com",
+    "sessionId": "test-session-123"
+  },
+  "expectedRecommendation": "hybrid-publishing",
+  "testScenarios": [
+    {
+      "name": "First-time author with medium budget",
+      "budget": "medium",
+      "experience": "basic",
+      "timeline": "moderate",
+      "expectedPath": "hybrid-publishing"
+    },
+    {
+      "name": "Experienced author with high budget",
+      "budget": "high",
+      "experience": "tech-savvy",
+      "timeline": "asap",
+      "expectedPath": "self-publishing"
+    },
+    {
+      "name": "Author with no budget",
+      "budget": "none",
+      "experience": "basic",
+      "timeline": "patient",
+      "expectedPath": "traditional-publishing"
+    }
+  ]
+}
