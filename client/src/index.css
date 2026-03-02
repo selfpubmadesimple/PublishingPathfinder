@@ -1,0 +1,172 @@
+/* Font Awesome icons via CDN */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Slab:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 98%);
+  --foreground: hsl(213, 13%, 13%);
+  --muted: hsl(60, 4.8%, 95.9%);
+  --muted-foreground: hsl(25, 5.3%, 44.7%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(213, 13%, 13%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(213, 13%, 13%);
+  --border: hsl(20, 5.9%, 90%);
+  --input: hsl(20, 5.9%, 90%);
+  --primary: hsl(312, 24%, 42%);
+  --primary-foreground: hsl(0, 0%, 98%);
+  --primaryDark: hsl(312, 28%, 32%);
+  --secondary: hsl(25, 35%, 65%);
+  --secondary-foreground: hsl(24, 9.8%, 10%);
+  --accent: hsl(15, 25%, 45%);
+  --accent-foreground: hsl(60, 9.1%, 97.8%);
+  --surface: hsl(0, 0%, 100%);
+  --onSurface: hsl(213, 13%, 13%);
+  --onBackground: hsl(213, 13%, 13%);
+  --warning: hsl(37, 100%, 50%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(60, 9.1%, 97.8%);
+  --ring: hsl(213, 13%, 13%);
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --primary: hsl(312, 24%, 42%);
+  --primary-foreground: hsl(0, 0%, 98%);
+  --primaryDark: hsl(312, 28%, 32%);
+  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(15, 25%, 45%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --surface: hsl(240, 10%, 3.9%);
+  --onSurface: hsl(0, 0%, 98%);
+  --onBackground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 4.9%, 83.9%);
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .font-roboto {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .font-roboto-slab {
+    font-family: 'Roboto Slab', serif;
+  }
+  
+  .text-primary {
+    color: var(--primary);
+  }
+  
+  .text-primaryDark {
+    color: var(--primaryDark);
+  }
+  
+  .text-secondary {
+    color: var(--secondary);
+  }
+  
+  .text-accent {
+    color: var(--accent);
+  }
+  
+  .text-surface {
+    color: var(--surface);
+  }
+  
+  .text-onSurface {
+    color: var(--onSurface);
+  }
+  
+  .text-onBackground {
+    color: var(--onBackground);
+  }
+  
+  .bg-primary {
+    background-color: var(--primary);
+  }
+  
+  .bg-primaryDark {
+    background-color: var(--primaryDark);
+  }
+  
+  .bg-secondary {
+    background-color: var(--secondary);
+  }
+  
+  .bg-accent {
+    background-color: var(--accent);
+  }
+  
+  .bg-surface {
+    background-color: var(--surface);
+  }
+  
+  .bg-background {
+    background-color: var(--background);
+  }
+  
+  .border-primary {
+    border-color: var(--primary);
+  }
+  
+  .border-secondary {
+    border-color: var(--secondary);
+  }
+  
+  .hover\:bg-primaryDark:hover {
+    background-color: var(--primaryDark);
+  }
+  
+  .hover\:text-primary:hover {
+    color: var(--primary);
+  }
+  
+  .hover\:border-primary:hover {
+    border-color: var(--primary);
+  }
+  
+  .shadow-material-1 {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .shadow-material-2 {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.12);
+  }
+  
+  .shadow-material-3 {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  }
+  
+  .hover\:shadow-material-2:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.12);
+  }
+}
